@@ -1,0 +1,14 @@
+set term png size 1920,1080
+set output 'velocities.png'
+set xlabel "Time (s)"
+set ylabel "Speed (m/s)"
+unset key
+
+number_of_cars = 20
+
+j = number_of_cars + 1
+plot for [i = 2:j:1] 'velocities.dat' u 1:i every 10 w linespoints lw 2 ps 2
+
+set output 'positions.png'
+set ylabel "Position (m)"
+plot for [i = 2:j:1] 'positions.dat' u 1:i every 10 w points ps 2
