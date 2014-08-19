@@ -2,13 +2,13 @@
 
 IDM is a serial, plain C implementation of the one-dimensional, discrete,
 periodic Intelligent Driver Model (IDM) solved in arbitrary precision with a
-Runge-Kutta 4 integrator.
+4th-order Runge-Kutta integrator.
 
 ### Future Work ###
 
 Further improvements might include more complex discrete driver models, various
-integrators, an arbitrary number of dimensions, mixed models, and an eventual
-exposure to Python for rapid prototyping.
+integrators, an arbitrary number of dimensions, mixed models, and
+parallelization.
 
 ### License ###
 
